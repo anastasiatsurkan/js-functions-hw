@@ -14,7 +14,7 @@ if (n1 >= n2 && n1 >= n3) {
 }*/
 
 // sarcina 2
-let n1 = 5;
+/*let n1 = 5;
 let n2 = 3;
 let n3 = 11;
 
@@ -26,6 +26,16 @@ if (n1 <= n2 && n1 <= n3) {
 
 } else {
     console.log("Valoarea minima este n3.");
+}*/
+
+// sarcina 3
+let varsta = 21;
+
+if (varsta >= 18) {
+    console.log("Ești potrivit pentru a juca acest joc");
+
+} else {
+    console.log("Ești prea tânăr pentru a juca acest joc");
 }
 
 
