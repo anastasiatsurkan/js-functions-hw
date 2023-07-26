@@ -54,6 +54,24 @@ console.log(varstaPersoanei(21));*/
 console.log(numberLimits(52));
 */
 
+// sarcina 5 - nu m-am descurcat
+/*function schimbValutar(usd, mdl, ron) {
+        if (usd >= 0) {
+            return (usd + "USD is " + usd*0.9 + "EUR");
+        }
+
+        if (mdl >= 0) {
+            return (mdl + "MDL is " + mdl*0.05 + "EUR");
+        }
+
+        if (ron >= 0) {
+            return (ron + "RON is " + ron*0.2 + "EUR");
+        }
+    }
+
+console.log(schimbValutar(1, 5, 1));*/
+
+
 
 
 
