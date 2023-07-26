@@ -88,7 +88,7 @@ console.log(schimbValutar(1, 5, 1));*/
 console.log(formeGeometrice(5, 4, 5, 4));*/
 
 // sarcina 7
-function weekDays(number) {
+/*function weekDays(number) {
     if (number === 1) {
         return ("Luni");
 
@@ -115,7 +115,7 @@ function weekDays(number) {
     }
 }
 
-console.log(weekDays(6));
+console.log(weekDays(6));*/
 
 
 
