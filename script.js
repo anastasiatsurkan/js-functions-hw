@@ -71,8 +71,21 @@ console.log(numberLimits(52));
 
 console.log(schimbValutar(1, 5, 1));*/
 
+// sarcina 6
+function formeGeometrice(a, b, c, d) {
+    if (a === b && a === c){
+        return ("Patrulaterul este un patrat");
 
+    } else if (a === c && b ===d) {
+        return ("Patrulaterul este un dreptunghi");
 
+    } else {
+        return ("Patrulaterul nu este ordinar")
+    }
+
+}
+
+console.log(formeGeometrice(5, 4, 5, 4))
 
 
 
