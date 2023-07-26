@@ -72,7 +72,7 @@ console.log(numberLimits(52));
 console.log(schimbValutar(1, 5, 1));*/
 
 // sarcina 6
-function formeGeometrice(a, b, c, d) {
+/*function formeGeometrice(a, b, c, d) {
     if (a === b && a === c){
         return ("Patrulaterul este un patrat");
 
@@ -80,13 +80,42 @@ function formeGeometrice(a, b, c, d) {
         return ("Patrulaterul este un dreptunghi");
 
     } else {
-        return ("Patrulaterul nu este ordinar")
+        return ("Patrulaterul nu este ordinar");
     }
 
 }
 
-console.log(formeGeometrice(5, 4, 5, 4))
+console.log(formeGeometrice(5, 4, 5, 4));*/
 
+// sarcina 7
+function weekDays(number) {
+    if (number === 1) {
+        return ("Luni");
+
+    } else if (number === 2) {
+        return ("Marti");
+
+    } else if (number === 3) {
+        return ("Miercuri");
+
+    } else if (number === 4) {
+        return ("Joi");
+
+    } else if (number === 5) {
+        return ("Vineri");
+
+    } else if (number === 6) {
+        return ("Sambata");
+
+    } else if (number === 7) {
+        return ("Duminica");
+
+    } else {
+        return ("Undefined");
+    }
+}
+
+console.log(weekDays(6));
 
 
 
