@@ -1,121 +1,119 @@
 // sarcina 1
-/*function maxValue(n1, n2, n3) {
+function maxValue(n1, n2, n3) {
     if (n1 >= n2 && n1 >= n3) {
-        return ("Valoarea maxima este n1.");
-
+        return "Valoarea maxima este: " + n1;
     } else if (n2 >= n1 && n2 >= n3) {
-        return ("Valoarea maxima este n2.");
-
+        return "Valoarea maxima este: " + n2;
     } else {
-        return ("Valoarea maxima este n3.");
+        return "Valoarea maxima este: " + n3;
     }
 }
 
-console.log(maxValue(13, 8, 4));*/
+console.log(maxValue(13, 8, 4));
 
 // sarcina 2
-/*function minValue(n1, n2, n3) {
+function minValue(n1, n2, n3) {
     if (n1 <= n2 && n1 <= n3) {
-        return ("Valoarea minima este n1.");
-
+        return "Valoarea minima este: " + n1;
     } else if (n2 <= n1 && n2 <= n3) {
-        return ("Valoarea minima este n2.");
-
+        return "Valoarea minima este: " + n2;
     } else {
-        return ("Valoarea minima este n3.");
+        return "Valoarea minima este: " + n3;
     }
 }
 
-console.log(minValue(20, 5, 11));*/
+console.log(minValue(20, 5, 11));
 
 // sarcina 3
-/*function varstaPersoanei(number) {
-    if (number >= 18) {
-        return ("Ești potrivit pentru a juca acest joc");
-
-    } else {
-        return ("Ești prea tânăr pentru a juca acest joc");
-    }
+function varstaPersoanei(number) {
+    return number >= 18 ? "Ești potrivit pentru a juca acest joc" : "Ești prea tânăr pentru a juca acest joc";
 }
 
-console.log(varstaPersoanei(21));*/
+console.log(varstaPersoanei(21));
 
 
 // sarcina 4
-/*function numberLimits(number) {
-    if (number >= 41 && number <= 68){
-        return ("True");
-
+function numberLimits(number, start, end) {
+    if (number >= start && number <= end) {
+        return true;
     } else {
-        return ("False");
+        return false;
     }
 }
 
 console.log(numberLimits(52));
-*/
+
 
 // sarcina 5 - nu m-am descurcat
-/*function schimbValutar(usd, mdl, ron) {
-        if (usd >= 0) {
-            return (usd + "USD is " + usd*0.9 + "EUR");
-        }
+function schimbValutar(amount, fromCurrency, toCurrency) {
+    const mdlCurrency = 0.05;
+    const usdCurrency = 0.9;
+    const ronCurrency = 0.2;
 
-        if (mdl >= 0) {
-            return (mdl + "MDL is " + mdl*0.05 + "EUR");
-        }
+    let euroAmount = 0;
 
-        if (ron >= 0) {
-            return (ron + "RON is " + ron*0.2 + "EUR");
-        }
+    if (fromCurrency === "MDL") {
+        euroAmount = amount * mdlCurrency;
+    } else if (fromCurrency === "USD") {
+        euroAmount = amount * usdCurrency;
+    } else if (fromCurrency === "RON") {
+        euroAmount = amount * ronCurrency;
+    } else if (fromCurrency === "EUR") {
+        euroAmount = amount;
+    } else {
+        return "Unsupported";
     }
 
-console.log(schimbValutar(1, 5, 1));*/
+    if (toCurrency === "MDL") {
+        return euroAmount / mdlCurrency;
+    } else if (toCurrency === "USD") {
+        return euroAmount / usdCurrency;
+    } else if (toCurrency === "RON") {
+        return euroAmount / ronCurrency;
+    } else if (toCurrency === "EUR") {
+        return euroAmount;
+    } else {
+        return "Unsupported"
+    }
+}
+
+console.log(schimbValutar(10, "RON", "USD"));
 
 // sarcina 6
-/*function formeGeometrice(a, b, c, d) {
-    if (a === b && a === c){
-        return ("Patrulaterul este un patrat");
-
-    } else if (a === c && b ===d) {
-        return ("Patrulaterul este un dreptunghi");
-
+function formeGeometrice(a, b, c, d) {
+    if (a === b && a === c && a === d) {
+        return "Patrulaterul este un patrat";
+    } else if (a === c && b === d) {
+        return "Patrulaterul este un dreptunghi";
     } else {
-        return ("Patrulaterul nu este ordinar");
+        return "Patrulaterul nu este ordinar";
     }
-
 }
 
-console.log(formeGeometrice(5, 4, 5, 4));*/
+console.log(formeGeometrice(5, 4, 5, 4));
 
 // sarcina 7
-/*function weekDays(number) {
+function weekDays(number) {
     if (number === 1) {
-        return ("Luni");
-
+        return "Luni";
     } else if (number === 2) {
-        return ("Marti");
-
+        return "Marti";
     } else if (number === 3) {
-        return ("Miercuri");
-
+        return "Miercuri";
     } else if (number === 4) {
-        return ("Joi");
-
+        return "Joi";
     } else if (number === 5) {
-        return ("Vineri");
-
+        return "Vineri";
     } else if (number === 6) {
-        return ("Sambata");
-
+        return "Sambata";
     } else if (number === 7) {
-        return ("Duminica");
-
+        return "Duminica";
     } else {
-        return ("Undefined");
+        return "Undefined";
     }
 }
 
-console.log(weekDays(6));*/
+console.log(weekDays(6));
 
 
 
